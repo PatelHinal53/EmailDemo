@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/toEditText"
+            android:inputType="textEmailAddress"
+            android:imeOptions="actionNext"
+            android:hint="To"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ccEditText"
+            android:inputType="textEmailAddress"
+            android:imeOptions="actionDone"
+            android:hint="Cc"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bccEditText"
+            android:inputType="textEmailAddress"
+            android:imeOptions="actionDone"
+            android:hint="Bcc"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/subjectEditText"
+            android:inputType="textEmailSubject"
+            android:imeOptions="actionNext"
+            android:hint="Subject"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bodyEditText"
+            android:inputType="textLongMessage"
+            android:imeOptions="actionNext"
+            android:hint="Message"/>
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/sendEmailButton"
+            android:text="Send Email"
+            android:autoSizeMaxTextSize="15dp"/>
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/addAttechmentButton"
+            android:text="Add Attechment"
+            android:autoSizeMaxTextSize="15dp"/>
+    </LinearLayout>
+</ScrollView>
